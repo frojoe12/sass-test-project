@@ -6,17 +6,24 @@
   </head>
   <body>
     <header><p>SASS Test Project</p></header>
-    <div class="button-container">
-      <button class="btn-default">One</button>
-      <button class="btn-default">Two</button>
-      <button class="btn-main">Three</button>
-    </div>
-    <section id="products">
-      <h1>Products</h1>
-      <ul id="products-container"></ul>
-    </section>
+    <nav>
+      <div class="button-container">
+        <button class="btn-default">One</button>
+        <button class="btn-default">Two</button>
+        <button class="btn-main">Three</button>
+      </div>
+    </nav>
+    <main>
+      <section id="products">
+        <h1>Products</h1>
+        <ul id="products-container"></ul>
+      </section>
+    </main>
+    <footer>
+      <div class="info">&copy; Joe Frost 2020</div>
+    </footer>
     <script>
-      createProductsList('products-container', 75) // args[ root-folder-id, no. of test products ]
+      createProductsList('products-container', 12) // args[ root-folder-id, no. of test products ]
     </script>
   </body>
 </html>

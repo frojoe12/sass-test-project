@@ -22,7 +22,7 @@ function styles() {
     .pipe(
       sass({
         sourcemap: true,
-        style: 'compressed',
+        style: 'expanded', // compressed
       }).on('error', sass.logError)
     )
     .pipe(gulp.dest(dest + 'css'))

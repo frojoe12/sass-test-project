@@ -1,6 +1,6 @@
 section#products {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: $siteWidthDesktop;
   padding: 0 10px;
   h1 {
     text-align: center;
@@ -28,7 +28,12 @@ section#products {
 
     li {
       @include productBoxStyle(#eee, rgb(33, 33, 92), #555);
-
+      transition: transform 0.15s ease-in-out, background 0.3s ease-in-out;
+      &:hover {
+        background: $yellow;
+        transform: scale(1.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
       flex: 1;
       a {
         text-decoration: none;

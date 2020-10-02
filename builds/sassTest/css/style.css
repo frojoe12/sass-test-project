@@ -22,13 +22,24 @@ body {
   font-size: 20px;
   font-family: var(--font-main); }
 
+main {
+  padding: 10px 0 40px 0;
+  background: var(--background-default); }
+
+h1 {
+  margin: 0; }
+
+nav {
+  background: var(--background-default); }
+
 .button-container {
   display: flex;
   justify-content: center;
-  margin: 10px auto;
-  padding: 10px;
-  max-width: 960px; }
+  margin: 0 auto;
+  padding: 25px;
+  max-width: 1200px; }
 
+/*comment*/
 .btn, .btn-default, .btn-main {
   border: none;
   padding: 5px 15px;
@@ -66,9 +77,18 @@ header {
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
     font-size: 1.5em; }
 
+footer {
+  background: #444444;
+  color: #bbb;
+  padding: 20px 0 50px 0; }
+  footer .info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px; }
+
 section#products {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1200px;
   padding: 0 10px; }
   section#products h1 {
     text-align: center;
@@ -95,11 +115,16 @@ section#products {
       padding: 15px 20px;
       border: 1px solid #aaa;
       margin: 10px;
+      transition: transform 0.15s ease-in-out, background 0.3s ease-in-out;
       flex: 1; }
       section#products ul li h2 {
         color: #21215c; }
       section#products ul li p {
         color: #555; }
+      section#products ul li:hover {
+        background: #ffee8b;
+        transform: scale(1.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
       section#products ul li a {
         text-decoration: none; }
         section#products ul li a h2 {

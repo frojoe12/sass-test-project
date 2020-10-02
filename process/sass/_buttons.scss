@@ -1,11 +1,14 @@
+nav {
+  background: var(--background-default);
+}
 .button-container {
   display: flex;
   justify-content: center;
-  margin: 10px auto;
-  padding: 10px;
-  max-width: 960px;
+  margin: 0 auto;
+  padding: 25px;
+  max-width: $siteWidthDesktop;
 }
-
+/*comment*/
 .btn {
   border: none;
   padding: 5px 15px;

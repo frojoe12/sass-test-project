@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Sansita+Swashed:wght@400;700&display=swap');
-
+// hidden comment
 /* variables as css */
 :root {
   --color-gray: #e1e1e1;
@@ -12,5 +12,10 @@
 
 /* variables as sass */
 $brightpink: #f0377f;
+$footerColor: #444444;
 
 $headingBackground: $brightpink;
+
+$yellow: rgb(255, 238, 139);
+
+$siteWidthDesktop: 1200px;

@@ -1,0 +1,10 @@
+footer {
+  background: $footerColor;
+  color: #bbb;
+  padding: 20px 0 50px 0;
+  .info {
+    max-width: $siteWidthDesktop;
+    margin: 0 auto;
+    padding: 25px;
+  }
+}

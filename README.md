@@ -1,8 +1,6 @@
 # sass-test-project
 
-test playground for sass commands and setup
-
-run
+# A test playground for SASS commands
 
 to install packages cd into 'sass-test-project' and run command 'npm install'
 

@@ -2,6 +2,7 @@
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/functions.js"></script>
   </head>
   <body>
     <header><p>SASS Test Project</p></header>
@@ -14,23 +15,8 @@
       <h1>Products</h1>
       <ul id="products-container"></ul>
     </section>
+    <script>
+      createProductsList('products-container', 75) // args[ root-folder-id, no. of test products ]
+    </script>
   </body>
-  <script>
-    const products = document.getElementById('products-container')
-    for (let i = 1; i <= 15; i++) {
-      const child = document.createElement('li')
-      child.classList = 'item'
-      const href = document.createElement('a')
-      href.setAttribute('href', '#')
-      const h2 = document.createElement('h2')
-      h2.innerText = `Product ${i}`
-      const p = document.createElement('p')
-      p.innerText = `Text about the product ${i}`
-      h2.classList = 'head'
-      const fragment = new DocumentFragment()
-      fragment.appendChild(h2)
-      fragment.appendChild(p)
-      products.appendChild(child).appendChild(href).appendChild(fragment)
-    }
-  </script>
 </html>

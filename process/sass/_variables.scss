@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Sansita+Swashed:wght@400;700&display=swap');
+
+/* variables as css */
+:root {
+  --color-gray: #e1e1e1;
+  --color-black: #333333;
+  --font-main: 'Sansita Swashed';
+
+  --background-default: var(--color-gray);
+  --color-default: var(--color-black);
+}
+
+/* variables as sass */
+$brightpink: #f0377f;
+
+$headingBackground: $brightpink;

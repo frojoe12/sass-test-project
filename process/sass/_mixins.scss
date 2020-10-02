@@ -1,0 +1,16 @@
+@mixin productBoxStyle(
+  $backgroundColor: #aaa,
+  $headingColor: black,
+  $textColor: black
+) {
+  background-color: $backgroundColor;
+  padding: 15px 20px;
+  border: 1px solid #aaa;
+  margin: 10px;
+  h2 {
+    color: $headingColor;
+  }
+  p {
+    color: $textColor;
+  }
+}

@@ -1,0 +1,37 @@
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 10px;
+  max-width: 960px;
+}
+
+.btn {
+  border: none;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 4px;
+  margin: 2px 10px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  user-select: none;
+  outline: none;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn-default {
+  @extend .btn;
+  background: #333;
+  color: white;
+}
+
+.btn-main {
+  @extend .btn;
+  background: darkblue;
+  color: white;
+}

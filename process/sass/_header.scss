@@ -1,0 +1,13 @@
+header {
+  font-size: 30px;
+  background: $headingBackground;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  p {
+    word-break: break-word;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
+    font-size: 1.5em;
+  }
+}

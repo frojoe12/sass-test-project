@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Sansita+Swashed:wght@400;700&display=swap");
+/* variables as css */
+:root {
+  --color-gray: #e1e1e1;
+  --color-black: #333333;
+  --font-main: 'Sansita Swashed';
+  --background-default: var(--color-gray);
+  --color-default: var(--color-black); }
+
+/* variables as sass */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* main styles */
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background-default);
+  color: var(--color-default);
+  font-size: 20px;
+  font-family: var(--font-main); }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 10px;
+  max-width: 960px; }
+
+.btn, .btn-default, .btn-main {
+  border: none;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 4px;
+  margin: 2px 10px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  user-select: none;
+  outline: none; }
+
+.btn:hover, .btn-default:hover, .btn-main:hover {
+  transform: scale(1.1); }
+
+.btn-default {
+  background: #333;
+  color: white; }
+
+.btn-main {
+  background: darkblue;
+  color: white; }
+
+header {
+  font-size: 30px;
+  background: #f0377f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px; }
+  header p {
+    word-break: break-word;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
+    font-size: 1.5em; }
+
+section#products {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 10px; }
+  section#products h1 {
+    text-align: center;
+    font-size: 40px; }
+  section#products ul {
+    /* FLEX STYLE */
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    /* GRID STYLE */
+    /*
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr;
+    }
+    */
+    padding: 0; }
+    section#products ul li {
+      background-color: #eee;
+      padding: 15px 20px;
+      border: 1px solid #aaa;
+      margin: 10px;
+      flex: 1; }
+      section#products ul li h2 {
+        color: #21215c; }
+      section#products ul li p {
+        color: #555; }
+      section#products ul li a {
+        text-decoration: none; }
+        section#products ul li a h2 {
+          margin: 0;
+          padding-bottom: 10px; }
+        section#products ul li a p {
+          margin: 0; }
+
+@media (max-width: 600px) {
+  header {
+    font-size: 4vw; } }
+
+@media (max-width: 400px) {
+  header {
+    font-size: 15px; } }
+
+/* nesting */
+/* partials */
+/* mixins */
+/* @extend */
+/* parent selectors */
+/* comments */
+/* math operations */
